@@ -7,12 +7,12 @@ public class Diamond {
 
     Scanner scanner = new Scanner(System.in);
     System.out.print("Enter an integer for the width and height of the diamond: ");
-    int userInput = scanner.nextInt();
+    int size = scanner.nextInt();
 
-    int n = (userInput % 2 == 0) ? userInput / 2 : (userInput + 1) / 2;
+    int userImput = (size % 2 == 0) ? size / 2 : (size + 1) / 2;
 
-    for (rows = 1; rows <= n; rows++) {
-      for (columns = 1; columns <= n - rows; columns++) {
+    for (rows = 1; rows <= userImput; rows++) {
+      for (columns = 1; columns <= userImput - rows; columns++) {
         System.out.print(" ");
       }
       for (columns = 1; columns <= 2 * rows - 1; columns++) {
@@ -21,8 +21,8 @@ public class Diamond {
         System.out.println();
       }
 
-    for (rows = n - 1; rows >= 1; rows--) {
-      for (columns = 1; columns <= n - rows; columns++) {
+    for (rows = userImput - 1; rows >= 1; rows--) {
+      for (columns = 1; columns <= userImput - rows; columns++) {
         System.out.print(" ");
       }
       for (columns = 1; columns <= 2 * rows - 1; columns++) {
