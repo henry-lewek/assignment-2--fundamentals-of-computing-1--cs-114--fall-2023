@@ -6,7 +6,7 @@ public static void main(String[] args) {
     int columns;
 
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter an integer for the width and height of the diamond: ");
+    System.out.print("Enter an integer for the diamond: ");
     int size = scanner.nextInt();
 
     int odduserInput = (size + 1) / 2;
@@ -18,19 +18,20 @@ public static void main(String[] args) {
     if (size % 2 == 0) {
       for (rows = 1; rows <= evenuserInput; rows++) {
         for (columns = 1; columns <= evenuserInput - rows; columns++) {
-          System.out.print(" ");
+          System.out.print("  ");
         }
-        for (columns = 1; columns <= 2 * rows - 1; columns++) {
+        for (columns = 1; columns <= 2 * rows ; columns++) {
           System.out.print(" *");
         }
           System.out.println();
+
       }
 
       for (rows = evenuserInput - 1; rows >= 1; rows--) {
         for (columns = 1; columns <= evenuserInput - rows; columns++) {
-          System.out.print(" ");
+          System.out.print("  ");
         }
-        for (columns = 1; columns <= 2 * rows - 1; columns++) {
+        for (columns = 2; columns <= 2 * rows + 1 ; columns++) {
           System.out.print(" *");
         }
           System.out.println();
