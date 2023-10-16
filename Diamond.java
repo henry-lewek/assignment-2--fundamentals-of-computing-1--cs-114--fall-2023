@@ -16,6 +16,10 @@ public static void main(String[] args) {
 // Code for even input
 // ------------------
     if (size % 2 == 0) {
+      for (int i = 0 ; i < size / 2 ; i++) {
+        System.out.print("  ");
+      }
+      System.out.println("*");
       for (rows = 1; rows <= evenuserInput; rows++) {
         for (columns = 1; columns <= evenuserInput - rows; columns++) {
           System.out.print("  ");
@@ -36,6 +40,10 @@ public static void main(String[] args) {
         }
           System.out.println();
       }
+        for (int i = 0 ; i < size / 2 ; i++) {
+        System.out.print("  ");
+      }
+      System.out.println("*");
     }
 
 //--------------------
